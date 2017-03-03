@@ -56,6 +56,7 @@ class Small:
         self.flag = round(self.ops[2])
 
     def inc_in(self,extra =None):
+
         self.ir += 1
 
     def set_in(self,extra = None):
@@ -67,8 +68,10 @@ class Small:
         print conds
         if (not self.check(conds)):
             print "Not executing"
+
             self.ir += 1
             return
+
         self.ir = self.ops[4]
 
     def mem(self, weight_index=None):

@@ -1,5 +1,5 @@
 class MIPS:
-    def __init__(self):
+    def __init__(self,num_regs):
         self.load = []
         self.load_targets = []
         self.store = []
@@ -11,7 +11,7 @@ class MIPS:
         self.branch_condition = []
         self.instructions = ["add","sub","b","mul","mov","cmp","str","ldr"]
         self.conds = ["", "ne", "eq", "gt", "lt"]
-        self.num_regs = 15
+        self.num_regs = num_regs
         self.num_mips = 8
         self.total =[]
         self.makeLoadInstruction()

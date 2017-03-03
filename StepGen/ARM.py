@@ -1,5 +1,5 @@
 class ARM:
-    def __init__(self):
+    def __init__(self,num_regs):
         self.load = []
         self.load_targets = []
         self.store = []
@@ -13,8 +13,8 @@ class ARM:
         self.branch_condition = []
         self.instructions = ["add","sub","b","mul","mov","cmp","str","ldr"]
         self.conds = ["", "ne", "eq", "gt", "lt"]
-        self.num_regs = 15
-        self.num_mips = 8
+        self.num_regs = num_regs
+
         self.total =[]
         self.makeLoadInstruction()
         self.makeArithmetic()
