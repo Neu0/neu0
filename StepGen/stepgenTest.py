@@ -16,11 +16,6 @@ encoder_model = load_model("Encoder_Mips_ARM_3.h5")
 from keras import backend as K
 
 
-def get_activations(model, X_batch):
-    get_3rd_layer_output = K.function([model.layers[0].input],
-                                      [model.layers[2].output])
-    layer_output = get_3rd_layer_output([X_batch])
-    return layer_output
 
 
 num_regs = 15

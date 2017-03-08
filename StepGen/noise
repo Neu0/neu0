@@ -1,845 +1,342 @@
 ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ',', ' ', '#', '[', ']', '$', ')', '(', '*']
-SUB $t7,$t1,$t2
+MOV R0,#4
 ***
 ************
 1
-CMP R7,R3
+mov r2,#10
 ***
 ************
 2
-BEQ R13
+mov r7,pc
 ***
-Not executing
-Inside setin
-[  2.71070330e-14   8.40471963e-12   1.00000000e+00   2.38202235e-16
-   1.07306601e-12]
-Not executing
 ************
 3
-ADD R4,R3,R2
+add r7,r7,#4
 ***
 ************
 4
-CMP R1,R4
+str r7,[r2]
 ***
 ************
 5
-ADDEQ R3,R3,R2
+B #8
 ***
-Not executing
-Not executing
-Not executing
-Not executing
+Inside setin
+[  9.99862671e-01   6.17397236e-05   1.81839641e-05   1.90977116e-05
+   3.83000552e-05]
 ************
 6
-BEQ R2
+cmp r0,#1
 ***
-Not executing
-Inside setin
-[  7.42779521e-05   1.00377420e-07   9.99925494e-01   1.26547377e-08
-   1.59691709e-07]
-Not executing
 ************
 7
-ADD R8,R0,R3
+ldreq r3,[r2]
 ***
+Not executing
+Not executing
 ************
 8
-ADD R9,[R8],R10
+streq r0,[r2]
 ***
+Not executing
+Not executing
+Not executing
 ************
 9
-ADD R12,R0,R4
+moveq pc,r3
 ***
+Not executing
+Not executing
 ************
 10
-ADD R11,[R12],R10
+add r2,r2,#1
 ***
 ************
 11
-CMP R9,R11
+str r0,[r2]
 ***
 ************
 12
-MOVGT R5,R9
+add r2,r2,#1
 ***
 ************
 13
-STRGT R11,[R8]
+mov r6,pc
 ***
 ************
 14
-STRGT R5,[R12]
+add r6,r6,#5
 ***
 ************
 15
-ADD R4,R4,$t2
+str r6,[r2]
 ***
 ************
 16
-B $t6
+sub r0,r0,#1
 ***
-Inside setin
-[  1.00000000e+00   2.05087596e-12   5.93709584e-14   7.78070733e-11
-   8.98559222e-13]
 ************
 17
-CMP R1,R4
+B  #8
 ***
+Inside setin
+[  9.99997020e-01   1.47358719e-06   2.36558062e-08   1.36645167e-06
+   1.17700999e-07]
 ************
 18
-ADDEQ R3,R3,R2
+cmp r0,#1
 ***
-Not executing
-Not executing
-Not executing
-Not executing
 ************
 19
-BEQ R2
+ldreq r3,[r2]
 ***
 Not executing
-Inside setin
-[  7.42779521e-05   1.00377420e-07   9.99925494e-01   1.26547377e-08
-   1.59691709e-07]
 Not executing
 ************
 20
-ADD R8,R0,R3
+streq r0,[r2]
 ***
+Not executing
+Not executing
+Not executing
 ************
 21
-ADD R9,[R8],R10
+moveq pc,r3
 ***
+Not executing
+Not executing
 ************
 22
-ADD R12,R0,R4
+add r2,r2,#1
 ***
 ************
 23
-ADD R11,[R12],R10
+str r0,[r2]
 ***
 ************
 24
-CMP R9,R11
+add r2,r2,#1
 ***
 ************
 25
-MOVGT R5,R9
+mov r6,pc
 ***
-Not executing
-Not executing
 ************
 26
-STRGT R11,[R8]
+add r6,r6,#5
 ***
-Not executing
-Not executing
-Not executing
 ************
 27
-STRGT R5,[R12]
+str r6,[r2]
 ***
-Not executing
-Not executing
-Not executing
 ************
 28
-ADD R4,R4,$t2
+sub r0,r0,#1
 ***
 ************
 29
-B $t6
+B  #8
 ***
 Inside setin
-[  1.00000000e+00   2.05087596e-12   5.93709584e-14   7.78070733e-11
-   8.98559222e-13]
+[  9.99997020e-01   1.47358719e-06   2.36558062e-08   1.36645167e-06
+   1.17700999e-07]
 ************
 30
-CMP R1,R4
+cmp r0,#1
 ***
 ************
 31
-ADDEQ R3,R3,R2
+ldreq r3,[r2]
 ***
-Not executing
-Not executing
 Not executing
 Not executing
 ************
 32
-BEQ R2
+streq r0,[r2]
 ***
 Not executing
-Inside setin
-[  7.42779521e-05   1.00377420e-07   9.99925494e-01   1.26547377e-08
-   1.59691709e-07]
+Not executing
 Not executing
 ************
 33
-ADD R8,R0,R3
+moveq pc,r3
 ***
+Not executing
+Not executing
 ************
 34
-ADD R9,[R8],R10
+add r2,r2,#1
 ***
 ************
 35
-ADD R12,R0,R4
+str r0,[r2]
 ***
 ************
 36
-ADD R11,[R12],R10
+add r2,r2,#1
 ***
 ************
 37
-CMP R9,R11
+mov r6,pc
 ***
 ************
 38
-MOVGT R5,R9
+add r6,r6,#5
 ***
-Not executing
-Not executing
 ************
 39
-STRGT R11,[R8]
+str r6,[r2]
 ***
-Not executing
-Not executing
-Not executing
 ************
 40
-STRGT R5,[R12]
+sub r0,r0,#1
 ***
-Not executing
-Not executing
-Not executing
 ************
 41
-ADD R4,R4,$t2
-***
-************
-42
-B $t6
+B  #8
 ***
 Inside setin
-[  1.00000000e+00   2.05087596e-12   5.93709584e-14   7.78070733e-11
-   8.98559222e-13]
+[  9.99997020e-01   1.47358719e-06   2.36558062e-08   1.36645167e-06
+   1.17700999e-07]
+************
+42
+cmp r0,#1
+***
 ************
 43
-CMP R1,R4
+ldreq r3,[r2]
 ***
 ************
 44
-ADDEQ R3,R3,R2
+streq r0,[r2]
 ***
-Not executing
-Not executing
-Not executing
-Not executing
 ************
 45
-BEQ R2
+moveq pc,r3
 ***
-Not executing
-Inside setin
-[  7.42779521e-05   1.00377420e-07   9.99925494e-01   1.26547377e-08
-   1.59691709e-07]
-Not executing
 ************
 46
-ADD R8,R0,R3
+ldr r1,[r2]
 ***
 ************
 47
-ADD R9,[R8],R10
+sub r2,r2,#1
 ***
 ************
 48
-ADD R12,R0,R4
+ldr r0,[r2]
 ***
 ************
 49
-ADD R11,[R12],R10
+mul r11,r1,r0
 ***
 ************
 50
-CMP R9,R11
+mov r1,r11
 ***
 ************
 51
-MOVGT R5,R9
+sub r2,r2,#1
 ***
-Not executing
-Not executing
 ************
 52
-STRGT R11,[R8]
+ldr r8,[r2]
 ***
-Not executing
-Not executing
-Not executing
 ************
 53
-STRGT R5,[R12]
+str r1,[r2]
 ***
-Not executing
-Not executing
-Not executing
 ************
 54
-ADD R4,R4,$t2
+mov pc,r8
 ***
 ************
 55
-B $t6
+ldr r1,[r2]
 ***
-Inside setin
-[  1.00000000e+00   2.05087596e-12   5.93709584e-14   7.78070733e-11
-   8.98559222e-13]
 ************
 56
-CMP R1,R4
+sub r2,r2,#1
 ***
 ************
 57
-ADDEQ R3,R3,R2
+ldr r0,[r2]
 ***
 ************
 58
-BEQ R2
+mul r11,r1,r0
 ***
-Inside setin
-[  7.42779521e-05   1.00377420e-07   9.99925494e-01   1.26547377e-08
-   1.59691709e-07]
 ************
 59
-CMP R7,R3
+mov r1,r11
 ***
 ************
 60
-BEQ R13
+sub r2,r2,#1
 ***
-Not executing
-Inside setin
-[  2.71070330e-14   8.40471963e-12   1.00000000e+00   2.38202235e-16
-   1.07306601e-12]
-Not executing
 ************
 61
-ADD R4,R3,R2
+ldr r8,[r2]
 ***
 ************
 62
-CMP R1,R4
+str r1,[r2]
 ***
 ************
 63
-ADDEQ R3,R3,R2
+mov pc,r8
 ***
-Not executing
-Not executing
-Not executing
-Not executing
 ************
 64
-BEQ R2
+ldr r1,[r2]
 ***
-Not executing
-Inside setin
-[  7.42779521e-05   1.00377420e-07   9.99925494e-01   1.26547377e-08
-   1.59691709e-07]
-Not executing
 ************
 65
-ADD R8,R0,R3
+sub r2,r2,#1
 ***
 ************
 66
-ADD R9,[R8],R10
+ldr r0,[r2]
 ***
 ************
 67
-ADD R12,R0,R4
+mul r11,r1,r0
 ***
 ************
 68
-ADD R11,[R12],R10
+mov r1,r11
 ***
 ************
 69
-CMP R9,R11
+sub r2,r2,#1
 ***
 ************
 70
-MOVGT R5,R9
+ldr r8,[r2]
 ***
-Not executing
-Not executing
 ************
 71
-STRGT R11,[R8]
+str r1,[r2]
 ***
-Not executing
-Not executing
-Not executing
 ************
 72
-STRGT R5,[R12]
+mov pc,r8
 ***
-Not executing
-Not executing
-Not executing
 ************
 73
-ADD R4,R4,$t2
+ldr r7,[r2]
 ***
 ************
 74
-B $t6
+b #29
 ***
 Inside setin
-[  1.00000000e+00   2.05087596e-12   5.93709584e-14   7.78070733e-11
-   8.98559222e-13]
+[  9.99862671e-01   6.17397236e-05   1.81839641e-05   1.90977116e-05
+   3.83000552e-05]
 ************
 75
-CMP R1,R4
+cmp r0,r1
 ***
 ************
 76
-ADDEQ R3,R3,R2
-***
-Not executing
-Not executing
-Not executing
-Not executing
-************
-77
-BEQ R2
-***
-Not executing
-Inside setin
-[  7.42779521e-05   1.00377420e-07   9.99925494e-01   1.26547377e-08
-   1.59691709e-07]
-Not executing
-************
-78
-ADD R8,R0,R3
-***
-************
-79
-ADD R9,[R8],R10
-***
-************
-80
-ADD R12,R0,R4
-***
-************
-81
-ADD R11,[R12],R10
-***
-************
-82
-CMP R9,R11
-***
-************
-83
-MOVGT R5,R9
-***
-Not executing
-Not executing
-************
-84
-STRGT R11,[R8]
-***
-Not executing
-Not executing
-Not executing
-************
-85
-STRGT R5,[R12]
-***
-Not executing
-Not executing
-Not executing
-************
-86
-ADD R4,R4,$t2
-***
-************
-87
-B $t6
-***
-Inside setin
-[  1.00000000e+00   2.05087596e-12   5.93709584e-14   7.78070733e-11
-   8.98559222e-13]
-************
-88
-CMP R1,R4
-***
-************
-89
-ADDEQ R3,R3,R2
-***
-Not executing
-Not executing
-Not executing
-Not executing
-************
-90
-BEQ R2
-***
-Not executing
-Inside setin
-[  7.42779521e-05   1.00377420e-07   9.99925494e-01   1.26547377e-08
-   1.59691709e-07]
-Not executing
-************
-91
-ADD R8,R0,R3
-***
-************
-92
-ADD R9,[R8],R10
-***
-************
-93
-ADD R12,R0,R4
-***
-************
-94
-ADD R11,[R12],R10
-***
-************
-95
-CMP R9,R11
-***
-************
-96
-MOVGT R5,R9
-***
-Not executing
-Not executing
-************
-97
-STRGT R11,[R8]
-***
-Not executing
-Not executing
-Not executing
-************
-98
-STRGT R5,[R12]
-***
-Not executing
-Not executing
-Not executing
-************
-99
-ADD R4,R4,$t2
-***
-************
-100
-B $t6
-***
-Inside setin
-[  1.00000000e+00   2.05087596e-12   5.93709584e-14   7.78070733e-11
-   8.98559222e-13]
-************
-101
-CMP R1,R4
-***
-************
-102
-ADDEQ R3,R3,R2
-***
-************
-103
-BEQ R2
-***
-Inside setin
-[  7.42779521e-05   1.00377420e-07   9.99925494e-01   1.26547377e-08
-   1.59691709e-07]
-************
-104
-CMP R7,R3
-***
-************
-105
-BEQ R13
-***
-Not executing
-Inside setin
-[  2.71070330e-14   8.40471963e-12   1.00000000e+00   2.38202235e-16
-   1.07306601e-12]
-Not executing
-************
-106
-ADD R4,R3,R2
-***
-************
-107
-CMP R1,R4
-***
-************
-108
-ADDEQ R3,R3,R2
-***
-Not executing
-Not executing
-Not executing
-Not executing
-************
-109
-BEQ R2
-***
-Not executing
-Inside setin
-[  7.42779521e-05   1.00377420e-07   9.99925494e-01   1.26547377e-08
-   1.59691709e-07]
-Not executing
-************
-110
-ADD R8,R0,R3
-***
-************
-111
-ADD R9,[R8],R10
-***
-************
-112
-ADD R12,R0,R4
-***
-************
-113
-ADD R11,[R12],R10
-***
-************
-114
-CMP R9,R11
-***
-************
-115
-MOVGT R5,R9
-***
-Not executing
-Not executing
-************
-116
-STRGT R11,[R8]
-***
-Not executing
-Not executing
-Not executing
-************
-117
-STRGT R5,[R12]
-***
-Not executing
-Not executing
-Not executing
-************
-118
-ADD R4,R4,$t2
-***
-************
-119
-B $t6
-***
-Inside setin
-[  1.00000000e+00   2.05087596e-12   5.93709584e-14   7.78070733e-11
-   8.98559222e-13]
-************
-120
-CMP R1,R4
-***
-************
-121
-ADDEQ R3,R3,R2
-***
-Not executing
-Not executing
-Not executing
-Not executing
-************
-122
-BEQ R2
-***
-Not executing
-Inside setin
-[  7.42779521e-05   1.00377420e-07   9.99925494e-01   1.26547377e-08
-   1.59691709e-07]
-Not executing
-************
-123
-ADD R8,R0,R3
-***
-************
-124
-ADD R9,[R8],R10
-***
-************
-125
-ADD R12,R0,R4
-***
-************
-126
-ADD R11,[R12],R10
-***
-************
-127
-CMP R9,R11
-***
-************
-128
-MOVGT R5,R9
-***
-************
-129
-STRGT R11,[R8]
-***
-************
-130
-STRGT R5,[R12]
-***
-************
-131
-ADD R4,R4,$t2
-***
-************
-132
-B $t6
-***
-Inside setin
-[  1.00000000e+00   2.05087596e-12   5.93709584e-14   7.78070733e-11
-   8.98559222e-13]
-************
-133
-CMP R1,R4
-***
-************
-134
-ADDEQ R3,R3,R2
-***
-************
-135
-BEQ R2
-***
-Inside setin
-[  7.42779521e-05   1.00377420e-07   9.99925494e-01   1.26547377e-08
-   1.59691709e-07]
-************
-136
-CMP R7,R3
-***
-************
-137
-BEQ R13
-***
-Not executing
-Inside setin
-[  2.71070330e-14   8.40471963e-12   1.00000000e+00   2.38202235e-16
-   1.07306601e-12]
-Not executing
-************
-138
-ADD R4,R3,R2
-***
-************
-139
-CMP R1,R4
-***
-************
-140
-ADDEQ R3,R3,R2
-***
-Not executing
-Not executing
-Not executing
-Not executing
-************
-141
-BEQ R2
-***
-Not executing
-Inside setin
-[  7.42779521e-05   1.00377420e-07   9.99925494e-01   1.26547377e-08
-   1.59691709e-07]
-Not executing
-************
-142
-ADD R8,R0,R3
-***
-************
-143
-ADD R9,[R8],R10
-***
-************
-144
-ADD R12,R0,R4
-***
-************
-145
-ADD R11,[R12],R10
-***
-************
-146
-CMP R9,R11
-***
-************
-147
-MOVGT R5,R9
-***
-************
-148
-STRGT R11,[R8]
-***
-************
-149
-STRGT R5,[R12]
-***
-************
-150
-ADD R4,R4,$t2
-***
-************
-151
-B $t6
-***
-Inside setin
-[  1.00000000e+00   2.05087596e-12   5.93709584e-14   7.78070733e-11
-   8.98559222e-13]
-************
-152
-CMP R1,R4
-***
-************
-153
-ADDEQ R3,R3,R2
-***
-************
-154
-BEQ R2
-***
-Inside setin
-[  7.42779521e-05   1.00377420e-07   9.99925494e-01   1.26547377e-08
-   1.59691709e-07]
-************
-155
-CMP R7,R3
-***
-************
-156
-BEQ R13
-***
-Inside setin
-[  2.71070330e-14   8.40471963e-12   1.00000000e+00   2.38202235e-16
-   1.07306601e-12]
-************
-157
-CMP R0,R1
-***
-************
-158
-[['SUB $t7,$t1,$t2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10</td><td>5</td><td>1</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>17</td><td>0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>4.0</td><td>4.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>17.0</td><td>0.0</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>'], ['CMP R7,R3', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>4.0</td><td>4.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>4.0</td><td>4.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>17.0</td><td>0.0</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>'], ['BEQ R13', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>4.0</td><td>4.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>4.0</td><td>4.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>17.0</td><td>0.0</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>'], ['ADD R4,R3,R2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>4.0</td><td>4.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>4.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>17.0</td><td>0.0</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>'], ['CMP R1,R4', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>4.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>4.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>17.0</td><td>0.0</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>'], ['ADDEQ R3,R3,R2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>4.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>4.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>17.0</td><td>0.0</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>'], ['BEQ R2', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>4.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>4.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>17.0</td><td>0.0</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>'], ['ADD R8,R0,R3', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>4.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>17.0</td><td>0.0</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>'], ['ADD R9,[R8],R10', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>4.0</td><td>10.0</td><td>1.99999999993</td><td>0.0</td><td>0.0</td><td>0.0</td><td>17.0</td><td>0.0</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>'], ['ADD R12,R0,R4', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>4.0</td><td>10.0</td><td>1.99999999993</td><td>0.0</td><td>0.0</td><td>0.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>4.0</td><td>10.0</td><td>1.99999999993</td><td>0.0</td><td>0.0</td><td>11.0</td><td>17.0</td><td>0.0</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>'], ['ADD R11,[R12],R10', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>4.0</td><td>10.0</td><td>1.99999999993</td><td>0.0</td><td>0.0</td><td>11.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>4.0</td><td>10.0</td><td>1.99999999993</td><td>0.0</td><td>0.999999999963</td><td>11.0</td><td>17.0</td><td>0.0</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>'], ['CMP R9,R11', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>4.0</td><td>10.0</td><td>1.99999999993</td><td>0.0</td><td>0.999999999963</td><td>11.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>4.0</td><td>10.0</td><td>1.99999999993</td><td>0.0</td><td>0.999999999963</td><td>11.0</td><td>17.0</td><td>0.0</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>'], ['MOVGT R5,R9', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>4.0</td><td>10.0</td><td>1.99999999993</td><td>0.0</td><td>0.999999999963</td><td>11.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>1.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>1.99999999993</td><td>0.0</td><td>0.999999999963</td><td>11.0</td><td>17.0</td><td>0.0</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>'], ['STRGT R11,[R8]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>1.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>1.99999999993</td><td>0.0</td><td>0.999999999963</td><td>11.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>1.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>1.99999999993</td><td>0.0</td><td>0.999999999963</td><td>11.0</td><td>17.0</td><td>0.0</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>', '<td>1.0</td><td>1.0</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['STRGT R5,[R12]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>1.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>1.99999999993</td><td>0.0</td><td>0.999999999963</td><td>11.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>1.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>1.99999999993</td><td>0.0</td><td>0.999999999963</td><td>11.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.0</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R4,R4,$t2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>1.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>1.99999999993</td><td>0.0</td><td>0.999999999963</td><td>11.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>1.99999999993</td><td>0.0</td><td>0.999999999963</td><td>11.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['B $t6', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>1.99999999993</td><td>0.0</td><td>0.999999999963</td><td>11.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>1.99999999993</td><td>0.0</td><td>0.999999999963</td><td>11.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['CMP R1,R4', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>1.99999999993</td><td>0.0</td><td>0.999999999963</td><td>11.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>1.99999999993</td><td>0.0</td><td>0.999999999963</td><td>11.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADDEQ R3,R3,R2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>1.99999999993</td><td>0.0</td><td>0.999999999963</td><td>11.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>1.99999999993</td><td>0.0</td><td>0.999999999963</td><td>11.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['BEQ R2', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>1.99999999993</td><td>0.0</td><td>0.999999999963</td><td>11.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>1.99999999993</td><td>0.0</td><td>0.999999999963</td><td>11.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R8,R0,R3', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>1.99999999993</td><td>0.0</td><td>0.999999999963</td><td>11.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>1.99999999993</td><td>0.0</td><td>0.999999999963</td><td>11.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R9,[R8],R10', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>1.99999999993</td><td>0.0</td><td>0.999999999963</td><td>11.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>0.999999999963</td><td>11.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R12,R0,R4', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>0.999999999963</td><td>11.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>0.999999999963</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R11,[R12],R10', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>0.999999999963</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['CMP R9,R11', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['MOVGT R5,R9', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['STRGT R11,[R8]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['STRGT R5,[R12]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R4,R4,$t2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['B $t6', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['CMP R1,R4', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADDEQ R3,R3,R2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['BEQ R2', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R8,R0,R3', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R9,[R8],R10', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R12,R0,R4', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>8.99999999967</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R11,[R12],R10', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>8.99999999967</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['CMP R9,R11', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['MOVGT R5,R9', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['STRGT R11,[R8]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['STRGT R5,[R12]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R4,R4,$t2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['B $t6', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['CMP R1,R4', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADDEQ R3,R3,R2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['BEQ R2', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R8,R0,R3', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R9,[R8],R10', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R12,R0,R4', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>11.9999999996</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R11,[R12],R10', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>11.9999999996</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['CMP R9,R11', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['MOVGT R5,R9', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['STRGT R11,[R8]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['STRGT R5,[R12]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R4,R4,$t2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['B $t6', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['CMP R1,R4', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADDEQ R3,R3,R2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>0.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['BEQ R2', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['CMP R7,R3', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['BEQ R13', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R4,R3,R2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['CMP R1,R4', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADDEQ R3,R3,R2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['BEQ R2', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R8,R0,R3', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>10.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R9,[R8],R10', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>0.999999999963</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R12,R0,R4', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R11,[R12],R10', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['CMP R9,R11', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['MOVGT R5,R9', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['STRGT R11,[R8]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['STRGT R5,[R12]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R4,R4,$t2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>2.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['B $t6', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['CMP R1,R4', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADDEQ R3,R3,R2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['BEQ R2', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R8,R0,R3', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R9,[R8],R10', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R12,R0,R4', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>8.99999999967</td><td>12.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>8.99999999967</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R11,[R12],R10', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>8.99999999967</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['CMP R9,R11', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['MOVGT R5,R9', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['STRGT R11,[R8]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['STRGT R5,[R12]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R4,R4,$t2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['B $t6', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['CMP R1,R4', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADDEQ R3,R3,R2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['BEQ R2', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R8,R0,R3', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R9,[R8],R10', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R12,R0,R4', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>11.9999999996</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R11,[R12],R10', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>11.9999999996</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['CMP R9,R11', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['MOVGT R5,R9', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['STRGT R11,[R8]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['STRGT R5,[R12]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R4,R4,$t2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['B $t6', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['CMP R1,R4', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADDEQ R3,R3,R2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>1.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['BEQ R2', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['CMP R7,R3', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['BEQ R13', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R4,R3,R2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>5.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['CMP R1,R4', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADDEQ R3,R3,R2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['BEQ R2', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R8,R0,R3', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>11.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R9,[R8],R10', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>1.99999999982</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R12,R0,R4', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R11,[R12],R10', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['CMP R9,R11', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['MOVGT R5,R9', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['STRGT R11,[R8]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['STRGT R5,[R12]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R4,R4,$t2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>3.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['B $t6', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['CMP R1,R4', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADDEQ R3,R3,R2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['BEQ R2', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R8,R0,R3', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R9,[R8],R10', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R12,R0,R4', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>11.9999999996</td><td>13.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>11.9999999996</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ADD R11,[R12],R10', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>11.9999999996</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['CMP R9,R11', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['MOVGT R5,R9', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>4.0</td><td>1.99999999993</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>4.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['STRGT R11,[R8]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>4.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>4.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>4.0</td>'], ['STRGT R5,[R12]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>4.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>4.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>4.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>'], ['ADD R4,R4,$t2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>4.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>5.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>'], ['B $t6', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>5.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>5.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>'], ['CMP R1,R4', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>5.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>5.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>'], ['ADDEQ R3,R3,R2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>2.0</td><td>5.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>5.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>'], ['BEQ R2', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>5.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>5.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>'], ['CMP R7,R3', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>5.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>5.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>'], ['BEQ R13', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>5.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>5.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>'], ['ADD R4,R3,R2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>5.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>4.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>'], ['CMP R1,R4', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>4.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>4.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>'], ['ADDEQ R3,R3,R2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>4.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>4.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>'], ['BEQ R2', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>4.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>4.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>'], ['ADD R8,R0,R3', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>4.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>12.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>4.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>13.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>'], ['ADD R9,[R8],R10', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>4.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>13.0</td><td>8.99999999967</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>4.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>'], ['ADD R12,R0,R4', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>4.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>4.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>'], ['ADD R11,[R12],R10', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>4.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>3.99999999985</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>4.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>8.99999999916</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>'], ['CMP R9,R11', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>4.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>8.99999999916</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>4.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>8.99999999916</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>'], ['MOVGT R5,R9', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>4.0</td><td>8.99999999967</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>8.99999999916</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>4.0</td><td>11.9999999996</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>8.99999999916</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>'], ['STRGT R11,[R8]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>4.0</td><td>11.9999999996</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>8.99999999916</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>4.0</td><td>11.9999999996</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>8.99999999916</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>12.0</td><td>8.99999999949</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>8.99999999927</td><td>8.99999999949</td>'], ['STRGT R5,[R12]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>4.0</td><td>11.9999999996</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>8.99999999916</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>4.0</td><td>11.9999999996</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>8.99999999916</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>8.99999999927</td><td>8.99999999949</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>8.99999999927</td><td>11.9999999995</td>'], ['ADD R4,R4,$t2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>4.0</td><td>11.9999999996</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>8.99999999916</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>5.0</td><td>11.9999999996</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>8.99999999916</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>8.99999999927</td><td>11.9999999995</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>8.99999999927</td><td>11.9999999995</td>'], ['B $t6', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>5.0</td><td>11.9999999996</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>8.99999999916</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>5.0</td><td>11.9999999996</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>8.99999999916</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>8.99999999927</td><td>11.9999999995</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>8.99999999927</td><td>11.9999999995</td>'], ['CMP R1,R4', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>5.0</td><td>11.9999999996</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>8.99999999916</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>5.0</td><td>11.9999999996</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>8.99999999916</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>8.99999999927</td><td>11.9999999995</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>8.99999999927</td><td>11.9999999995</td>'], ['ADDEQ R3,R3,R2', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>3.0</td><td>5.0</td><td>11.9999999996</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>8.99999999916</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>4.0</td><td>5.0</td><td>11.9999999996</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>8.99999999916</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>8.99999999927</td><td>11.9999999995</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>8.99999999927</td><td>11.9999999995</td>'], ['BEQ R2', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>4.0</td><td>5.0</td><td>11.9999999996</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>8.99999999916</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>4.0</td><td>5.0</td><td>11.9999999996</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>8.99999999916</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>8.99999999927</td><td>11.9999999995</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>8.99999999927</td><td>11.9999999995</td>'], ['CMP R7,R3', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>4.0</td><td>5.0</td><td>11.9999999996</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>8.99999999916</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>4.0</td><td>5.0</td><td>11.9999999996</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>8.99999999916</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>8.99999999927</td><td>11.9999999995</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>8.99999999927</td><td>11.9999999995</td>'], ['BEQ R13', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>4.0</td><td>5.0</td><td>11.9999999996</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>8.99999999916</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>4.0</td><td>5.0</td><td>11.9999999996</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>8.99999999916</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>8.99999999927</td><td>11.9999999995</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>8.99999999927</td><td>11.9999999995</td>'], ['CMP R0,R1', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>4.0</td><td>5.0</td><td>11.9999999996</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>8.99999999916</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>10.0</td><td>5.0</td><td>1.0</td><td>4.0</td><td>5.0</td><td>11.9999999996</td><td>4.0</td><td>4.0</td><td>13.0</td><td>11.9999999996</td><td>0.0</td><td>8.99999999916</td><td>14.0</td><td>17.0</td><td>0.0</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>8.99999999927</td><td>11.9999999995</td>', '<td>1.0</td><td>1.99999999989</td><td>4.00000000004</td><td>8.99999999927</td><td>11.9999999995</td>']]
+[['MOV R0,#4', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>', '<td>4.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>1.0</td><td>0.0</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>'], ['mov r2,#10', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>4.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>1.0</td><td>0.0</td>', '<td>4.0</td><td>0.0</td><td>10.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>2.0</td><td>0.0</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>'], ['mov r7,pc', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>4.0</td><td>0.0</td><td>10.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>2.0</td><td>0.0</td>', '<td>4.0</td><td>0.0</td><td>10.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>2.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>3.0</td><td>0.0</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>'], ['add r7,r7,#4', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>4.0</td><td>0.0</td><td>10.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>2.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>3.0</td><td>0.0</td>', '<td>4.0</td><td>0.0</td><td>10.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>4.0</td><td>0.0</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>'], ['str r7,[r2]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>4.0</td><td>0.0</td><td>10.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>4.0</td><td>0.0</td>', '<td>4.0</td><td>0.0</td><td>10.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>5.0</td><td>0.0</td>', '<td>2</td><td>1</td><td>9</td><td>12</td><td>4</td>', '<td>5.99999999985</td><td>1.0</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['B #8', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>4.0</td><td>0.0</td><td>10.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>5.0</td><td>0.0</td>', '<td>4.0</td><td>0.0</td><td>10.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>8.0</td><td>0.0</td>', '<td>5.99999999985</td><td>1.0</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>5.99999999985</td><td>1.0</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['cmp r0,#1', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>4.0</td><td>0.0</td><td>10.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>8.0</td><td>0.0</td>', '<td>4.0</td><td>0.0</td><td>10.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>9.0</td><td>0.0</td>', '<td>5.99999999985</td><td>1.0</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>5.99999999985</td><td>1.0</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['ldreq r3,[r2]', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>4.0</td><td>0.0</td><td>10.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>9.0</td><td>0.0</td>', '<td>4.0</td><td>0.0</td><td>10.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>10.0</td><td>0.0</td>', '<td>5.99999999985</td><td>1.0</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>5.99999999985</td><td>1.0</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['streq r0,[r2]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>4.0</td><td>0.0</td><td>10.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>10.0</td><td>0.0</td>', '<td>4.0</td><td>0.0</td><td>10.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>11.0</td><td>0.0</td>', '<td>5.99999999985</td><td>1.0</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>5.99999999985</td><td>1.0</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['moveq pc,r3', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>4.0</td><td>0.0</td><td>10.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>11.0</td><td>0.0</td>', '<td>4.0</td><td>0.0</td><td>10.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>12.0</td><td>0.0</td>', '<td>5.99999999985</td><td>1.0</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>5.99999999985</td><td>1.0</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['add r2,r2,#1', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>4.0</td><td>0.0</td><td>10.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>12.0</td><td>0.0</td>', '<td>4.0</td><td>0.0</td><td>11.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>13.0</td><td>0.0</td>', '<td>5.99999999985</td><td>1.0</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>5.99999999985</td><td>1.0</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['str r0,[r2]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>4.0</td><td>0.0</td><td>11.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>13.0</td><td>0.0</td>', '<td>4.0</td><td>0.0</td><td>11.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>14.0</td><td>0.0</td>', '<td>5.99999999985</td><td>1.0</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['add r2,r2,#1', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>4.0</td><td>0.0</td><td>11.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>14.0</td><td>0.0</td>', '<td>4.0</td><td>0.0</td><td>12.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>15.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['mov r6,pc', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>4.0</td><td>0.0</td><td>12.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>15.0</td><td>0.0</td>', '<td>4.0</td><td>0.0</td><td>12.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>15.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>16.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['add r6,r6,#5', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>4.0</td><td>0.0</td><td>12.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>15.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>16.0</td><td>0.0</td>', '<td>4.0</td><td>0.0</td><td>12.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>17.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>'], ['str r6,[r2]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>4.0</td><td>0.0</td><td>12.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>17.0</td><td>0.0</td>', '<td>4.0</td><td>0.0</td><td>12.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>18.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>9.0</td><td>12.0</td><td>4.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>12.0</td><td>4.0</td>'], ['sub r0,r0,#1', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>4.0</td><td>0.0</td><td>12.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>18.0</td><td>0.0</td>', '<td>3.0</td><td>0.0</td><td>12.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>19.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>12.0</td><td>4.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>12.0</td><td>4.0</td>'], ['B  #8', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>3.0</td><td>0.0</td><td>12.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>19.0</td><td>0.0</td>', '<td>3.0</td><td>0.0</td><td>12.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>8.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>12.0</td><td>4.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>12.0</td><td>4.0</td>'], ['cmp r0,#1', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>3.0</td><td>0.0</td><td>12.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>8.0</td><td>0.0</td>', '<td>3.0</td><td>0.0</td><td>12.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>9.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>12.0</td><td>4.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>12.0</td><td>4.0</td>'], ['ldreq r3,[r2]', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>3.0</td><td>0.0</td><td>12.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>9.0</td><td>0.0</td>', '<td>3.0</td><td>0.0</td><td>12.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>10.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>12.0</td><td>4.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>12.0</td><td>4.0</td>'], ['streq r0,[r2]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>3.0</td><td>0.0</td><td>12.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>10.0</td><td>0.0</td>', '<td>3.0</td><td>0.0</td><td>12.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>11.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>12.0</td><td>4.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>12.0</td><td>4.0</td>'], ['moveq pc,r3', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>3.0</td><td>0.0</td><td>12.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>11.0</td><td>0.0</td>', '<td>3.0</td><td>0.0</td><td>12.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>12.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>12.0</td><td>4.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>12.0</td><td>4.0</td>'], ['add r2,r2,#1', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>3.0</td><td>0.0</td><td>12.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>12.0</td><td>0.0</td>', '<td>3.0</td><td>0.0</td><td>13.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>13.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>12.0</td><td>4.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>12.0</td><td>4.0</td>'], ['str r0,[r2]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>3.0</td><td>0.0</td><td>13.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>13.0</td><td>0.0</td>', '<td>3.0</td><td>0.0</td><td>13.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>14.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>12.0</td><td>4.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>4.0</td>'], ['add r2,r2,#1', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>3.0</td><td>0.0</td><td>13.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>14.0</td><td>0.0</td>', '<td>3.0</td><td>0.0</td><td>14.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>15.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>4.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>4.0</td>'], ['mov r6,pc', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>3.0</td><td>0.0</td><td>14.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>15.0</td><td>0.0</td>', '<td>3.0</td><td>0.0</td><td>14.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>15.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>16.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>4.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>4.0</td>'], ['add r6,r6,#5', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>3.0</td><td>0.0</td><td>14.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>15.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>16.0</td><td>0.0</td>', '<td>3.0</td><td>0.0</td><td>14.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>17.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>4.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>4.0</td>'], ['str r6,[r2]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>3.0</td><td>0.0</td><td>14.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>17.0</td><td>0.0</td>', '<td>3.0</td><td>0.0</td><td>14.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>18.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>4.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>'], ['sub r0,r0,#1', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>3.0</td><td>0.0</td><td>14.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>18.0</td><td>0.0</td>', '<td>2.0</td><td>0.0</td><td>14.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>19.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>'], ['B  #8', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>2.0</td><td>0.0</td><td>14.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>19.0</td><td>0.0</td>', '<td>2.0</td><td>0.0</td><td>14.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>8.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>'], ['cmp r0,#1', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>2.0</td><td>0.0</td><td>14.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>8.0</td><td>0.0</td>', '<td>2.0</td><td>0.0</td><td>14.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>9.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>'], ['ldreq r3,[r2]', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>2.0</td><td>0.0</td><td>14.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>9.0</td><td>0.0</td>', '<td>2.0</td><td>0.0</td><td>14.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>10.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>'], ['streq r0,[r2]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>2.0</td><td>0.0</td><td>14.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>10.0</td><td>0.0</td>', '<td>2.0</td><td>0.0</td><td>14.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>11.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>'], ['moveq pc,r3', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>2.0</td><td>0.0</td><td>14.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>11.0</td><td>0.0</td>', '<td>2.0</td><td>0.0</td><td>14.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>12.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>'], ['add r2,r2,#1', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>2.0</td><td>0.0</td><td>14.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>12.0</td><td>0.0</td>', '<td>2.0</td><td>0.0</td><td>15.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>13.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>'], ['str r0,[r2]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>2.0</td><td>0.0</td><td>15.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>13.0</td><td>0.0</td>', '<td>2.0</td><td>0.0</td><td>15.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>14.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>'], ['add r2,r2,#1', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>2.0</td><td>0.0</td><td>15.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>14.0</td><td>0.0</td>', '<td>2.0</td><td>0.0</td><td>16.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>15.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>'], ['mov r6,pc', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>2.0</td><td>0.0</td><td>16.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>15.0</td><td>0.0</td>', '<td>2.0</td><td>0.0</td><td>16.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>15.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>16.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>'], ['add r6,r6,#5', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>2.0</td><td>0.0</td><td>16.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>15.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>16.0</td><td>0.0</td>', '<td>2.0</td><td>0.0</td><td>16.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>17.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>'], ['str r6,[r2]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>2.0</td><td>0.0</td><td>16.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>17.0</td><td>0.0</td>', '<td>2.0</td><td>0.0</td><td>16.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>18.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>'], ['sub r0,r0,#1', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>2.0</td><td>0.0</td><td>16.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>18.0</td><td>0.0</td>', '<td>1.0</td><td>0.0</td><td>16.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>19.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>'], ['B  #8', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>1.0</td><td>0.0</td><td>16.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>19.0</td><td>0.0</td>', '<td>1.0</td><td>0.0</td><td>16.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>8.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>'], ['cmp r0,#1', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>1.0</td><td>0.0</td><td>16.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>8.0</td><td>0.0</td>', '<td>1.0</td><td>0.0</td><td>16.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>9.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>'], ['ldreq r3,[r2]', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>1.0</td><td>0.0</td><td>16.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>9.0</td><td>0.0</td>', '<td>1.0</td><td>0.0</td><td>16.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>10.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>'], ['streq r0,[r2]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>1.0</td><td>0.0</td><td>16.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>10.0</td><td>0.0</td>', '<td>1.0</td><td>0.0</td><td>16.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>11.0</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>'], ['moveq pc,r3', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>1.0</td><td>0.0</td><td>16.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>11.0</td><td>0.0</td>', '<td>1.0</td><td>0.0</td><td>16.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>19.9999999985</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>'], ['ldr r1,[r2]', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>1.0</td><td>0.0</td><td>16.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>19.9999999985</td><td>0.0</td>', '<td>1.0</td><td>1.00000000066</td><td>16.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.9999999985</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>'], ['sub r2,r2,#1', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>1.0</td><td>1.00000000066</td><td>16.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>20.9999999985</td><td>0.0</td>', '<td>1.0</td><td>1.00000000066</td><td>15.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>21.9999999985</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>'], ['ldr r0,[r2]', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>1.0</td><td>1.00000000066</td><td>15.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>21.9999999985</td><td>0.0</td>', '<td>1.99999999985</td><td>1.00000000066</td><td>15.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>22.9999999985</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>'], ['mul r11,r1,r0', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>1.99999999985</td><td>1.00000000066</td><td>15.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>22.9999999985</td><td>0.0</td>', '<td>1.99999999985</td><td>1.00000000066</td><td>15.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>1.99999999985</td><td>0.0</td><td>23.9999999985</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>'], ['mov r1,r11', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>1.99999999985</td><td>1.00000000066</td><td>15.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>1.99999999985</td><td>0.0</td><td>23.9999999985</td><td>0.0</td>', '<td>1.99999999985</td><td>1.99999999985</td><td>15.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>1.99999999985</td><td>0.0</td><td>24.9999999985</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>'], ['sub r2,r2,#1', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>1.99999999985</td><td>1.99999999985</td><td>15.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>1.99999999985</td><td>0.0</td><td>24.9999999985</td><td>0.0</td>', '<td>1.99999999985</td><td>1.99999999985</td><td>14.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>1.99999999985</td><td>0.0</td><td>25.9999999985</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>'], ['ldr r8,[r2]', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>1.99999999985</td><td>1.99999999985</td><td>14.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>1.99999999985</td><td>0.0</td><td>25.9999999985</td><td>0.0</td>', '<td>1.99999999985</td><td>1.99999999985</td><td>14.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999987</td><td>0.0</td><td>0.0</td><td>1.99999999985</td><td>0.0</td><td>26.9999999985</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>'], ['str r1,[r2]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>1.99999999985</td><td>1.99999999985</td><td>14.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999987</td><td>0.0</td><td>0.0</td><td>1.99999999985</td><td>0.0</td><td>26.9999999985</td><td>0.0</td>', '<td>1.99999999985</td><td>1.99999999985</td><td>14.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999987</td><td>0.0</td><td>0.0</td><td>1.99999999985</td><td>0.0</td><td>27.9999999985</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>19.9999999994</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>2.00000000051</td>'], ['mov pc,r8', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>1.99999999985</td><td>1.99999999985</td><td>14.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999987</td><td>0.0</td><td>0.0</td><td>1.99999999985</td><td>0.0</td><td>27.9999999985</td><td>0.0</td>', '<td>1.99999999985</td><td>1.99999999985</td><td>14.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999987</td><td>0.0</td><td>0.0</td><td>1.99999999985</td><td>0.0</td><td>19.9999999987</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>2.00000000051</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>2.00000000051</td>'], ['ldr r1,[r2]', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>1.99999999985</td><td>1.99999999985</td><td>14.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999987</td><td>0.0</td><td>0.0</td><td>1.99999999985</td><td>0.0</td><td>19.9999999987</td><td>0.0</td>', '<td>1.99999999985</td><td>2.00000000044</td><td>14.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999987</td><td>0.0</td><td>0.0</td><td>1.99999999985</td><td>0.0</td><td>20.9999999987</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>2.00000000051</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>2.00000000051</td>'], ['sub r2,r2,#1', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>1.99999999985</td><td>2.00000000044</td><td>14.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999987</td><td>0.0</td><td>0.0</td><td>1.99999999985</td><td>0.0</td><td>20.9999999987</td><td>0.0</td>', '<td>1.99999999985</td><td>2.00000000044</td><td>13.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999987</td><td>0.0</td><td>0.0</td><td>1.99999999985</td><td>0.0</td><td>21.9999999987</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>2.00000000051</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>2.00000000051</td>'], ['ldr r0,[r2]', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>1.99999999985</td><td>2.00000000044</td><td>13.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999987</td><td>0.0</td><td>0.0</td><td>1.99999999985</td><td>0.0</td><td>21.9999999987</td><td>0.0</td>', '<td>3.00000000022</td><td>2.00000000044</td><td>13.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999987</td><td>0.0</td><td>0.0</td><td>1.99999999985</td><td>0.0</td><td>22.9999999987</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>2.00000000051</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>2.00000000051</td>'], ['mul r11,r1,r0', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>3.00000000022</td><td>2.00000000044</td><td>13.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999987</td><td>0.0</td><td>0.0</td><td>1.99999999985</td><td>0.0</td><td>22.9999999987</td><td>0.0</td>', '<td>3.00000000022</td><td>2.00000000044</td><td>13.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999987</td><td>0.0</td><td>0.0</td><td>6.00000000044</td><td>0.0</td><td>23.9999999987</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>2.00000000051</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>2.00000000051</td>'], ['mov r1,r11', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>3.00000000022</td><td>2.00000000044</td><td>13.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999987</td><td>0.0</td><td>0.0</td><td>6.00000000044</td><td>0.0</td><td>23.9999999987</td><td>0.0</td>', '<td>3.00000000022</td><td>6.00000000044</td><td>13.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999987</td><td>0.0</td><td>0.0</td><td>6.00000000044</td><td>0.0</td><td>24.9999999987</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>2.00000000051</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>2.00000000051</td>'], ['sub r2,r2,#1', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>3.00000000022</td><td>6.00000000044</td><td>13.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999987</td><td>0.0</td><td>0.0</td><td>6.00000000044</td><td>0.0</td><td>24.9999999987</td><td>0.0</td>', '<td>3.00000000022</td><td>6.00000000044</td><td>12.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999987</td><td>0.0</td><td>0.0</td><td>6.00000000044</td><td>0.0</td><td>25.9999999987</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>2.00000000051</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>2.00000000051</td>'], ['ldr r8,[r2]', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>3.00000000022</td><td>6.00000000044</td><td>12.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999987</td><td>0.0</td><td>0.0</td><td>6.00000000044</td><td>0.0</td><td>25.9999999987</td><td>0.0</td>', '<td>3.00000000022</td><td>6.00000000044</td><td>12.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999989</td><td>0.0</td><td>0.0</td><td>6.00000000044</td><td>0.0</td><td>26.9999999987</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>2.00000000051</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>2.00000000051</td>'], ['str r1,[r2]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>3.00000000022</td><td>6.00000000044</td><td>12.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999989</td><td>0.0</td><td>0.0</td><td>6.00000000044</td><td>0.0</td><td>26.9999999987</td><td>0.0</td>', '<td>3.00000000022</td><td>6.00000000044</td><td>12.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999989</td><td>0.0</td><td>0.0</td><td>6.00000000044</td><td>0.0</td><td>27.9999999987</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>19.9999999996</td><td>3.00000000033</td><td>2.00000000051</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>6.00000000095</td><td>3.00000000033</td><td>2.00000000051</td>'], ['mov pc,r8', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>3.00000000022</td><td>6.00000000044</td><td>12.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999989</td><td>0.0</td><td>0.0</td><td>6.00000000044</td><td>0.0</td><td>27.9999999987</td><td>0.0</td>', '<td>3.00000000022</td><td>6.00000000044</td><td>12.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999989</td><td>0.0</td><td>0.0</td><td>6.00000000044</td><td>0.0</td><td>19.9999999989</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>6.00000000095</td><td>3.00000000033</td><td>2.00000000051</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>6.00000000095</td><td>3.00000000033</td><td>2.00000000051</td>'], ['ldr r1,[r2]', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>3.00000000022</td><td>6.00000000044</td><td>12.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999989</td><td>0.0</td><td>0.0</td><td>6.00000000044</td><td>0.0</td><td>19.9999999989</td><td>0.0</td>', '<td>3.00000000022</td><td>6.00000000073</td><td>12.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999989</td><td>0.0</td><td>0.0</td><td>6.00000000044</td><td>0.0</td><td>20.9999999989</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>6.00000000095</td><td>3.00000000033</td><td>2.00000000051</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>6.00000000095</td><td>3.00000000033</td><td>2.00000000051</td>'], ['sub r2,r2,#1', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>3.00000000022</td><td>6.00000000073</td><td>12.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999989</td><td>0.0</td><td>0.0</td><td>6.00000000044</td><td>0.0</td><td>20.9999999989</td><td>0.0</td>', '<td>3.00000000022</td><td>6.00000000073</td><td>11.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999989</td><td>0.0</td><td>0.0</td><td>6.00000000044</td><td>0.0</td><td>21.9999999989</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>6.00000000095</td><td>3.00000000033</td><td>2.00000000051</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>6.00000000095</td><td>3.00000000033</td><td>2.00000000051</td>'], ['ldr r0,[r2]', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>3.00000000022</td><td>6.00000000073</td><td>11.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999989</td><td>0.0</td><td>0.0</td><td>6.00000000044</td><td>0.0</td><td>21.9999999989</td><td>0.0</td>', '<td>3.99999999974</td><td>6.00000000073</td><td>11.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999989</td><td>0.0</td><td>0.0</td><td>6.00000000044</td><td>0.0</td><td>22.9999999989</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>6.00000000095</td><td>3.00000000033</td><td>2.00000000051</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>6.00000000095</td><td>3.00000000033</td><td>2.00000000051</td>'], ['mul r11,r1,r0', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>3.99999999974</td><td>6.00000000073</td><td>11.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999989</td><td>0.0</td><td>0.0</td><td>6.00000000044</td><td>0.0</td><td>22.9999999989</td><td>0.0</td>', '<td>3.99999999974</td><td>6.00000000073</td><td>11.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999989</td><td>0.0</td><td>0.0</td><td>23.9999999985</td><td>0.0</td><td>23.9999999989</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>6.00000000095</td><td>3.00000000033</td><td>2.00000000051</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>6.00000000095</td><td>3.00000000033</td><td>2.00000000051</td>'], ['mov r1,r11', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>3.99999999974</td><td>6.00000000073</td><td>11.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999989</td><td>0.0</td><td>0.0</td><td>23.9999999985</td><td>0.0</td><td>23.9999999989</td><td>0.0</td>', '<td>3.99999999974</td><td>23.9999999985</td><td>11.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999989</td><td>0.0</td><td>0.0</td><td>23.9999999985</td><td>0.0</td><td>24.9999999989</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>6.00000000095</td><td>3.00000000033</td><td>2.00000000051</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>6.00000000095</td><td>3.00000000033</td><td>2.00000000051</td>'], ['sub r2,r2,#1', '<p>READ r2</p><p>READ r1</p><p>ALU </p><p>WRITE r0</p><p>INCIN </p>', '<td>3.99999999974</td><td>23.9999999985</td><td>11.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999989</td><td>0.0</td><td>0.0</td><td>23.9999999985</td><td>0.0</td><td>24.9999999989</td><td>0.0</td>', '<td>3.99999999974</td><td>23.9999999985</td><td>10.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999989</td><td>0.0</td><td>0.0</td><td>23.9999999985</td><td>0.0</td><td>25.9999999989</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>6.00000000095</td><td>3.00000000033</td><td>2.00000000051</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>6.00000000095</td><td>3.00000000033</td><td>2.00000000051</td>'], ['ldr r8,[r2]', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>3.99999999974</td><td>23.9999999985</td><td>10.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>19.9999999989</td><td>0.0</td><td>0.0</td><td>23.9999999985</td><td>0.0</td><td>25.9999999989</td><td>0.0</td>', '<td>3.99999999974</td><td>23.9999999985</td><td>10.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>5.99999999964</td><td>0.0</td><td>0.0</td><td>23.9999999985</td><td>0.0</td><td>26.9999999989</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>6.00000000095</td><td>3.00000000033</td><td>2.00000000051</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>6.00000000095</td><td>3.00000000033</td><td>2.00000000051</td>'], ['str r1,[r2]', '<p>READ r0</p><p>READ r2</p><p>WRITE r2</p><p>NO </p><p>INCIN </p>', '<td>3.99999999974</td><td>23.9999999985</td><td>10.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>5.99999999964</td><td>0.0</td><td>0.0</td><td>23.9999999985</td><td>0.0</td><td>26.9999999989</td><td>0.0</td>', '<td>3.99999999974</td><td>23.9999999985</td><td>10.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>5.99999999964</td><td>0.0</td><td>0.0</td><td>23.9999999985</td><td>0.0</td><td>27.9999999989</td><td>0.0</td>', '<td>5.99999999985</td><td>3.99999999989</td><td>6.00000000095</td><td>3.00000000033</td><td>2.00000000051</td>', '<td>23.9999999978</td><td>3.99999999989</td><td>6.00000000095</td><td>3.00000000033</td><td>2.00000000051</td>'], ['mov pc,r8', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>3.99999999974</td><td>23.9999999985</td><td>10.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>5.99999999964</td><td>0.0</td><td>0.0</td><td>23.9999999985</td><td>0.0</td><td>27.9999999989</td><td>0.0</td>', '<td>3.99999999974</td><td>23.9999999985</td><td>10.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>5.99999999964</td><td>0.0</td><td>0.0</td><td>23.9999999985</td><td>0.0</td><td>5.99999999964</td><td>0.0</td>', '<td>23.9999999978</td><td>3.99999999989</td><td>6.00000000095</td><td>3.00000000033</td><td>2.00000000051</td>', '<td>23.9999999978</td><td>3.99999999989</td><td>6.00000000095</td><td>3.00000000033</td><td>2.00000000051</td>'], ['ldr r7,[r2]', '<p>READ r1</p><p>WRITE r0</p><p>NO </p><p>NO </p><p>INCIN </p>', '<td>3.99999999974</td><td>23.9999999985</td><td>10.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>6.0</td><td>5.99999999964</td><td>0.0</td><td>0.0</td><td>23.9999999985</td><td>0.0</td><td>5.99999999964</td><td>0.0</td>', '<td>3.99999999974</td><td>23.9999999985</td><td>10.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>23.9999999969</td><td>5.99999999964</td><td>0.0</td><td>0.0</td><td>23.9999999985</td><td>0.0</td><td>6.99999999964</td><td>0.0</td>', '<td>23.9999999978</td><td>3.99999999989</td><td>6.00000000095</td><td>3.00000000033</td><td>2.00000000051</td>', '<td>23.9999999978</td><td>3.99999999989</td><td>6.00000000095</td><td>3.00000000033</td><td>2.00000000051</td>'], ['b #29', '<p>READ r2</p><p>SETIN </p><p>NO </p><p>NO </p><p>NO </p>', '<td>3.99999999974</td><td>23.9999999985</td><td>10.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>23.9999999969</td><td>5.99999999964</td><td>0.0</td><td>0.0</td><td>23.9999999985</td><td>0.0</td><td>6.99999999964</td><td>0.0</td>', '<td>3.99999999974</td><td>23.9999999985</td><td>10.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>23.9999999969</td><td>5.99999999964</td><td>0.0</td><td>0.0</td><td>23.9999999985</td><td>0.0</td><td>29.0</td><td>0.0</td>', '<td>23.9999999978</td><td>3.99999999989</td><td>6.00000000095</td><td>3.00000000033</td><td>2.00000000051</td>', '<td>23.9999999978</td><td>3.99999999989</td><td>6.00000000095</td><td>3.00000000033</td><td>2.00000000051</td>'], ['cmp r0,r1', '<p>READ r2</p><p>READ r0</p><p>NO </p><p>SET </p><p>INCIN </p>', '<td>3.99999999974</td><td>23.9999999985</td><td>10.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>23.9999999969</td><td>5.99999999964</td><td>0.0</td><td>0.0</td><td>23.9999999985</td><td>0.0</td><td>29.0</td><td>0.0</td>', '<td>3.99999999974</td><td>23.9999999985</td><td>10.0</td><td>19.9999999985</td><td>0.0</td><td>0.0</td><td>20.0</td><td>23.9999999969</td><td>5.99999999964</td><td>0.0</td><td>0.0</td><td>23.9999999985</td><td>0.0</td><td>30.0</td><td>0.0</td>', '<td>23.9999999978</td><td>3.99999999989</td><td>6.00000000095</td><td>3.00000000033</td><td>2.00000000051</td>', '<td>23.9999999978</td><td>3.99999999989</td><td>6.00000000095</td><td>3.00000000033</td><td>2.00000000051</td>']]

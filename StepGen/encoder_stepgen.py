@@ -17,7 +17,7 @@ real_open = open
 
 
 
-num_regs = 30
+num_regs = 15
 symbols = list(map(chr, range(97, 123))) + map(str, range(0, 10)) + [",", " ", "#", "[", "]" ,"$",")","("] + ["*"]
 print symbols
 
@@ -27,18 +27,23 @@ def encode_char(c):
     l[symbols.index(c)] = 1
     return l
 
+nums_strs = list(map(str,range(0,10)))
 
 def encode_inst(inst):
     inst = inst.lower()
     encoded_inst = []
     num = False
-    for c in inst:
+    const = 0
+    for index,c in enumerate(inst):
         encoded_char = encode_char(c)
         encoded_inst.append(encoded_char)
-        if c == "#":
+        if index>0 and inst[index-1] == "," and c in nums_strs:
+            const = int(inst[index:])
             break
-    return encoded_inst
-
+        if c == "#":
+            const = int(inst[index+1:])
+            break
+    return encoded_inst,const
 
 before = []
 ops = ["add","sub","b","mul","mov","cmp","str","ldr"]
@@ -50,7 +55,7 @@ mips = MIPS(num_regs)
 def prepare_inputs_for_encoder(samples):
     inputs = []
     for sample,target in samples:
-        inputs.append(encode_inst(sample))
+        inputs.append(encode_inst(sample)[0])
     inputs = np.array(inputs)
     inputs = sequence.pad_sequences(inputs, maxlen=20)
     return inputs
@@ -124,7 +129,7 @@ r1_outputs = []
 r2_outputs = []
 cond_outputs = []
 bracket_outputs = []
-
+const_outputs = []
 for out in outputs:
     inst_outputs.append(out[0])
     r0_outputs.append(out[1])
@@ -132,6 +137,7 @@ for out in outputs:
     r2_outputs.append(out[3])
     cond_outputs.append(out[4])
     bracket_outputs.append(out[5])
+    const_outputs.append(out[6])
 
 
 def split(l, ratio):
@@ -143,7 +149,7 @@ def split(l, ratio):
 import random
 big_data = zip(encodings,inst_outputs,r0_outputs,r1_outputs,r2_outputs,cond_outputs,bracket_outputs,target_op,target_w)
 random.shuffle(big_data)
-big_data = split(big_data,0.1)[0]
+big_data = split(big_data,0.8)[0]
 encodings,inst_outputs,r0_outputs,r1_outputs,r2_outputs,cond_outputs,bracket_outputs,target_op,target_w = zip(*big_data)
 inst_outputs = np.array(inst_outputs)
 r0_outputs = np.array(r0_outputs)
@@ -164,7 +170,7 @@ print "New encodings prepared"
 print "Building model and ready to train"
 
 inputl = Input(shape=(20, len(symbols)))
-lstm1 = LSTM(512, activation='relu', name='lstm1', return_sequences=True)(inputl)
+lstm1 = Bidirectional(LSTM(512, activation='relu', name='lstm1', return_sequences=True))(inputl)
 lstm = LSTM(256, activation='relu', name='lstm', return_sequences=False)(lstm1)
 lstm = GaussianNoise(0.1)(lstm)
 instr = Dense(len(ops), activation='softmax', name='instr')(lstm)
@@ -179,39 +185,46 @@ lstm = GaussianNoise(0.1)(lstm)
 instr_small = Dense(len(small_ops), activation='softmax', name='instr_small')(lstm)
 W_small = Dense(len(weights), activation='softmax', name='W_small')(lstm)
 model = Model(input=[inputl], output=[instr,cond,r0,r1,r2,bracket,instr_small,W_small])
-model.compile(optimizer='rmsprop',
+model.compile(optimizer='adadelta',
               loss=['categorical_crossentropy'] * 8,
               metrics=['accuracy'])
 print model.summary()
 
-
 def test_model():
-    instructions = [raw_input("Enter instruction: ")]
-    encod = [encode_inst(i) for i in instructions]
-    encodings = np.array(encod)
-    encodings = sequence.pad_sequences(encodings, maxlen=20, padding='post')
-    predict = model.predict(encodings)
-    print predict
-    print "-"*30
-    for prediction in predict[:-2]:
-        print np.argmax(prediction), prediction
-    small_ops1 = predict[6][0]
-    w = predict[7][0]
-    small = ""
-    print "-" * 15
-    for op, w in zip(small_ops1, w):
-        ind = np.argmax(op)
-        ind2 = np.argmax(w)
-        out = str(small_ops[ind]) + " " + str(weights[ind2])
-        print out
+    while True:
+        instructions = [raw_input("Enter instruction: ")]
+        encod = [encode_inst(i) for i in instructions]
+        encod,consts = zip(*encod)
+        encodings = np.array(encod)
+        encodings = sequence.pad_sequences(encodings, maxlen=20)
+        predict = model.predict(encodings)
+        print predict
+        print "-"*30
+        for prediction in predict[:-2]:
+            print np.argmax(prediction), prediction
+        small_ops1 = predict[6][0]
+        w = predict[7][0]
+        small = ""
+        print "-" * 15
+        for op, w in zip(small_ops1, w):
+            ind = np.argmax(op)
+            ind2 = np.argmax(w)
+            out = str(small_ops[ind]) + " " + str(weights[ind2])
+            print out
+        cont = raw_input("Continue? Y for continue")
+        if(cont != "Y"):
+            break
 
+loa = raw_input("Load model? train = leave blank")
+if(len(loa)>0):
+    model = load_model("Full_Encoder"+".h5")
 while(True):
     num_epoch = int(raw_input("Enter number of epochs to run: "))
     model.fit([encodings],
           [inst_outputs,cond_outputs,r0_outputs,r1_outputs,r2_outputs,bracket_outputs,target_op, target_w],
           batch_size=128,
           nb_epoch=num_epoch)
-    cmd = raw_input("Enter Q to quit or T to test or S to save")
+    cmd =  raw_input("Enter Q to quit or T to test or S to save")
     if(cmd == "Q"):
         break
     if(cmd == "T"):
@@ -223,3 +236,5 @@ while(True):
         else:
             name = name + ".h5"
         model.save(name)
+    # model.save("Full_Encoder.h5")
+    # exit(0)

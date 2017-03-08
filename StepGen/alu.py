@@ -1,5 +1,9 @@
-import numpy as np
+from __future__ import print_function
+import sys
 
+def eprint(*args, **kwargs):
+    print(*args, file=sys.stderr, **kwargs)
+import numpy as np
 
 class ALU:
     def __init__(self):
@@ -10,6 +14,7 @@ class ALU:
         self.mul = temp[2]
 
     def compute(self, inst, op1, op2, bias=1):
+        eprint(inst,op1,op2)
         inst0 = inst[0]
         inst1 = inst[1]
         inst2 = inst[2]
@@ -17,6 +22,7 @@ class ALU:
         add = self.perform_one_arith(self.add, input_alu)
         sub = self.perform_one_arith(self.sub, input_alu)
         mul = self.perform_one_arith(self.mul, input_alu)
+        eprint("ADD: ",add,"SUB: ",sub,"MUL: ",mul)
         return add + sub + mul
 
     def perform_one_arith(self, weight, inp):
@@ -47,6 +53,6 @@ if __name__ == "__main__":
             mul_prob = float(raw_input("Enter multiplication probability: "))
             op1 = float(raw_input("Enter op1: "))
             op2 = float(raw_input("Enter op2: "))
-            print alu.compute([add_prob, sub_prob, mul_prob], op1, op2)
+            print(alu.compute([add_prob, sub_prob, mul_prob], op1, op2))
         except:
-            print "Exception,Try again"
+            print("Exception,Try again")
